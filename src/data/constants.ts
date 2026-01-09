@@ -245,46 +245,84 @@ export type Experience = {
   skills: SkillNames[];
 };
 
+import { SkillNames } from "@/data/skills";
+
 export const EXPERIENCE: Experience[] = [
-  {
-    id: 1,
-    startDate: "Dec 2024",
-    endDate: "Present",
-    title: "Full Stack Engineer",
-    company: "OmniNexus",
+    {
+    id: 4,
+    startDate: "2023",
+    endDate: "2023",
+    title: "Web Developer & Designer Intern",
+    company: "Being Ambitious",
     description: [
-      "Developing scalable full-stack applications involved in complex systems.",
-      "Optimizing database performance and query efficiency.",
-      "Collaborating on architectural decisions and technical strategy.",
+      "Developed responsive frontend interfaces using modern web technologies.",
+      "Integrated REST APIs with frontend components.",
+      "Improved UI/UX through clean layouts and optimized interaction flows.",
     ],
     skills: [
-      SkillNames.NEXTJS,
-      SkillNames.TS,
-      SkillNames.POSTGRES,
-      SkillNames.DOCKER,
-      SkillNames.AWS,
+      SkillNames.REACT,
+      SkillNames.JS,
+      SkillNames.TAILWIND,
+      SkillNames.HTML,
+      SkillNames.CSS,
+      SkillNames.GIT,
+    ],
+  },
+  {
+    id: 1,
+    startDate: "2023",
+    endDate: "Present",
+    title: "Technical Member",
+    company: "Robotics Club, VIT Chennai",
+    description: [
+      "Worked on embedded systems and robotics-related software modules.",
+      "Implemented basic automation logic and sensor-based workflows.",
+      "Collaborated with team members on hardware prototypes and testing.",
+    ],
+    skills: [
+      SkillNames.JS,
+      SkillNames.NODEJS,
+      SkillNames.GIT,
+      SkillNames.LINUX,
     ],
   },
   {
     id: 2,
-    startDate: "Apr 2022",
-    endDate: "Dec 2024",
-    title: "Freelance Developer",
-    company: "Live & Learn",
+    startDate: "2024",
+    endDate: "Present",
+    title: "Student Tech Ambassador",
+    company: "1Stop.ai",
     description: [
-      "Delivered custom web solutions for diverse clients.",
-      "Managed full project lifecycles from design to deployment.",
-      "Maintained high client satisfaction through effective communication.",
+      "Promoted AI and ML learning resources across student communities.",
+      "Organized and managed technical webinars and awareness programs.",
+      "Represented the platform within the campus ecosystem.",
     ],
     skills: [
-      SkillNames.REACT,
-      SkillNames.NODEJS,
-      SkillNames.MONGODB,
-      SkillNames.TAILWIND,
-      SkillNames.WORDPRESS,
+      SkillNames.JS,
+      SkillNames.GITHUB,
+      SkillNames.CANVA ?? SkillNames.GIT, // fallback-safe if CANVA isn't used elsewhere
+      SkillNames.GIT,
+    ],
+  },
+  {
+    id: 3,
+    startDate: "2025",
+    endDate: "Present",
+    title: "Student Tech Ambassador",
+    company: "CyberIntel",
+    description: [
+      "Conducted outreach activities focused on AI and emerging technologies.",
+      "Hosted student engagement sessions and tech awareness drives.",
+      "Built a campus-level community of technology enthusiasts.",
+    ],
+    skills: [
+      SkillNames.JS,
+      SkillNames.GITHUB,
+      SkillNames.GIT,
     ],
   },
 ];
+
 
 export const themeDisclaimers = {
   light: [
