@@ -235,6 +235,102 @@ export type Project = {
   live: string;
 };
 const projects: Project[] = [
+
+
+   {
+    id: "arogya-ai",
+    category: "AI / ML · MERN",
+    title: "Arogya AI – Smart Health Assistant",
+    src: "/lovable-uploads/d6f8a09e-6ec7-464d-8d07-b2fc50250c25.png",
+    screenshots: ["d6f8a09e-6ec7-464d-8d07-b2fc50250c25.png"],
+    live: "https://github.com/Nikhil2005menariya/Arogya-Ai",
+    github: "https://github.com/Nikhil2005menariya/Arogya-Ai",
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.tailwind,
+      ],
+      backend: [
+        PROJECT_SKILLS.node,
+        PROJECT_SKILLS.express,
+        PROJECT_SKILLS.mongo,
+        PROJECT_SKILLS.sockerio,
+        PROJECT_SKILLS.python,
+      ],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            Smart health assistant that predicts diseases from symptoms and
+            enables secure real-time doctor–patient chat using Socket.IO.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+        </div>
+      );
+    },
+  },
+
+
+    {
+    id: "music-streaming",
+    category: "MERN Stack",
+    title: "Music Streaming Web App",
+    src: "/lovable-uploads/6fb84967-074c-444d-aa83-2d6ed6cccc6f.png",
+    screenshots: ["6fb84967-074c-444d-aa83-2d6ed6cccc6f.png"],
+    live: "https://music-app-79t7.onrender.com/",
+    skills: {
+      frontend: [PROJECT_SKILLS.react],
+      backend: [
+        PROJECT_SKILLS.node,
+        PROJECT_SKILLS.express,
+        PROJECT_SKILLS.mongo,
+      ],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            Full-stack music streaming platform with AI chatbot support and
+            genre-based search.
+          </TypographyP>
+          <ProjectsLinks live={this.live} />
+        </div>
+      );
+    },
+  },
+
+
+    {
+    id: "notes-nest",
+    category: "MERN Stack",
+    title: "Notes Nest – Task & Note Manager",
+    src: "/lovable-uploads/19dcf7a1-5d5f-44cf-b28f-9f3b1edd39d8.png",
+    screenshots: ["19dcf7a1-5d5f-44cf-b28f-9f3b1edd39d8.png"],
+    live: "https://github.com/Nikhil2005menariya/Notes_app",
+    github: "https://github.com/Nikhil2005menariya/Notes_app",
+    skills: {
+      frontend: [PROJECT_SKILLS.react],
+      backend: [
+        PROJECT_SKILLS.node,
+        PROJECT_SKILLS.express,
+        PROJECT_SKILLS.mongo,
+        PROJECT_SKILLS.sockerio,
+      ],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            Productivity application for managing notes and tasks with
+            real-time updates and reminders.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+        </div>
+      );
+    },
+  },
+
   {
     id: "rag-scientific-explorer",
     category: "AI / ML",
@@ -293,97 +389,7 @@ const projects: Project[] = [
     },
   },
 
-  {
-    id: "arogya-ai",
-    category: "AI / ML · MERN",
-    title: "Arogya AI – Smart Health Assistant",
-    src: "/lovable-uploads/d6f8a09e-6ec7-464d-8d07-b2fc50250c25.png",
-    screenshots: ["d6f8a09e-6ec7-464d-8d07-b2fc50250c25.png"],
-    live: "https://github.com/Nikhil2005menariya/Arogya-Ai",
-    github: "https://github.com/Nikhil2005menariya/Arogya-Ai",
-    skills: {
-      frontend: [
-        PROJECT_SKILLS.react,
-        PROJECT_SKILLS.tailwind,
-      ],
-      backend: [
-        PROJECT_SKILLS.node,
-        PROJECT_SKILLS.express,
-        PROJECT_SKILLS.mongo,
-        PROJECT_SKILLS.sockerio,
-        PROJECT_SKILLS.python,
-      ],
-    },
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono">
-            Smart health assistant that predicts diseases from symptoms and
-            enables secure real-time doctor–patient chat using Socket.IO.
-          </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
-        </div>
-      );
-    },
-  },
 
-  {
-    id: "music-streaming",
-    category: "MERN Stack",
-    title: "Music Streaming Web App",
-    src: "/lovable-uploads/6fb84967-074c-444d-aa83-2d6ed6cccc6f.png",
-    screenshots: ["6fb84967-074c-444d-aa83-2d6ed6cccc6f.png"],
-    live: "https://music-app-79t7.onrender.com/",
-    skills: {
-      frontend: [PROJECT_SKILLS.react],
-      backend: [
-        PROJECT_SKILLS.node,
-        PROJECT_SKILLS.express,
-        PROJECT_SKILLS.mongo,
-      ],
-    },
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono">
-            Full-stack music streaming platform with AI chatbot support and
-            genre-based search.
-          </TypographyP>
-          <ProjectsLinks live={this.live} />
-        </div>
-      );
-    },
-  },
-
-  {
-    id: "notes-nest",
-    category: "MERN Stack",
-    title: "Notes Nest – Task & Note Manager",
-    src: "/lovable-uploads/19dcf7a1-5d5f-44cf-b28f-9f3b1edd39d8.png",
-    screenshots: ["19dcf7a1-5d5f-44cf-b28f-9f3b1edd39d8.png"],
-    live: "https://github.com/Nikhil2005menariya/Notes_app",
-    github: "https://github.com/Nikhil2005menariya/Notes_app",
-    skills: {
-      frontend: [PROJECT_SKILLS.react],
-      backend: [
-        PROJECT_SKILLS.node,
-        PROJECT_SKILLS.express,
-        PROJECT_SKILLS.mongo,
-        PROJECT_SKILLS.sockerio,
-      ],
-    },
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono">
-            Productivity application for managing notes and tasks with
-            real-time updates and reminders.
-          </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
-        </div>
-      );
-    },
-  },
 
   {
     id: "bit-automation",
