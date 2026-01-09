@@ -299,7 +299,7 @@ export const EXPERIENCE: Experience[] = [
     skills: [
       SkillNames.JS,
       SkillNames.GITHUB,
-      SkillNames.CANVA ?? SkillNames.GIT, // fallback-safe if CANVA isn't used elsewhere
+      SkillNames.GIT, // fallback-safe if CANVA isn't used elsewhere
       SkillNames.GIT,
     ],
   },
