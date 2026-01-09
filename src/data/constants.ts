@@ -245,7 +245,6 @@ export type Experience = {
   skills: SkillNames[];
 };
 
-import { SkillNames } from "@/data/skills";
 
 export const EXPERIENCE: Experience[] = [
     {
