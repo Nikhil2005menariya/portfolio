@@ -271,6 +271,39 @@ const projects: Project[] = [
     },
   },
 
+  {
+    id: "chatx",
+    category: "MERN · Real-Time",
+    title: "ChatX – Real-Time Communication Platform",
+    src: "/lovable-uploads/chatX.png", // replace with actual screenshot if needed
+    screenshots: ["chatx.png"],
+    live: "https://your-live-chat-app-link.com", // optional
+    github: "https://github.com/Nikhil2005menariya/chat-app", // update if repo name differs
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.tailwind,
+      ],
+      backend: [
+        PROJECT_SKILLS.node,
+        PROJECT_SKILLS.express,
+        PROJECT_SKILLS.mongo,
+        PROJECT_SKILLS.sockerio,
+        PROJECT_SKILLS.docker,
+      ],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            Real-time chat application supporting instant messaging, secure
+            document sharing, and low-latency video calls using WebRTC.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+        </div>
+      );
+    },
+  },
 
     {
     id: "music-streaming",
@@ -409,35 +442,6 @@ const projects: Project[] = [
           <TypographyP className="font-mono">
             ESP8266-based IoT system enabling smart control of appliances,
             irrigation automation, and gas leak detection.
-          </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
-        </div>
-      );
-    },
-  },
-
-  {
-    id: "pmss-portal",
-    category: "MERN Stack",
-    title: "PMSS Scholarship Portal – SIH 2023",
-    src: "/lovable-uploads/9fdde6ff-7edb-452e-bb54-00c504e04e88.png",
-    screenshots: ["9fdde6ff-7edb-452e-bb54-00c504e04e88.png"],
-    live: "https://github.com/AthJa/SIH2024",
-    github: "https://github.com/AthJa/SIH2024",
-    skills: {
-      frontend: [PROJECT_SKILLS.react],
-      backend: [
-        PROJECT_SKILLS.node,
-        PROJECT_SKILLS.mongo,
-        PROJECT_SKILLS.firebase,
-      ],
-    },
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono">
-            Centralized portal for Prime Minister’s Scholarship Scheme with
-            document upload, eligibility checks, and admin dashboard.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
