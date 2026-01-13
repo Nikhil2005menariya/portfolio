@@ -276,7 +276,7 @@ const projects: Project[] = [
     category: "MERN · Real-Time",
     title: "ChatX – Real-Time Communication Platform",
     src: "/lovable-uploads/chatX.png", // replace with actual screenshot if needed
-    screenshots: ["chatx.png"],
+    screenshots: ["chatX.png"],
     live: "https://your-live-chat-app-link.com", // optional
     github: "https://github.com/Nikhil2005menariya/chat-app", // update if repo name differs
     skills: {
@@ -304,6 +304,59 @@ const projects: Project[] = [
       );
     },
   },
+
+  {
+  id: "smart-parking-system",
+  category: "MERN · Geospatial · Real-Time",
+  title: "Smart Parking System – City-Scale Parking Platform",
+  src: "/lovable-uploads/parkeasy-1.png", // replace with actual screenshot path
+  screenshots: [
+    "parkeasy-1.png",
+    "parkeasy-2.png",
+    "parkeasy-3.png",
+  ],
+  live: "https://github.com/Nikhil2005menariya/parkeasy", // optional if deployed
+  github: "https://github.com/Nikhil2005menariya/parkeasy", // update if repo name differs
+  skills: {
+    frontend: [
+      PROJECT_SKILLS.next,
+      PROJECT_SKILLS.react,
+      PROJECT_SKILLS.tailwind,
+      PROJECT_SKILLS.framerMotion,
+      PROJECT_SKILLS.reactQuery,
+    ],
+    backend: [
+      PROJECT_SKILLS.node,
+      PROJECT_SKILLS.express,
+      PROJECT_SKILLS.mongo,
+      PROJECT_SKILLS.sockerio,
+      PROJECT_SKILLS.docker,
+    ],
+  },
+  get content() {
+    return (
+      <div>
+        <TypographyP className="font-mono">
+          City-scale smart parking platform built to solve real-world urban
+          parking challenges. The system enables users to discover nearby
+          parking on an interactive map, view real-time availability, analyze
+          congestion through heatmaps, navigate to locations, manage parking
+          sessions, and complete billing with dynamic and peak-hour pricing.
+          <br />
+          <br />
+          The platform supports role-based access with an admin dashboard for
+          adding parking locations by pinning points directly on the map,
+          managing slots, and viewing analytics. Designed with geospatial
+          indexing and seeded with 1,000+ realistic parking locations across
+          Mumbai for performance and scalability.
+        </TypographyP>
+
+        <ProjectsLinks live={this.live} repo={this.github} />
+      </div>
+    );
+  },
+},
+
 
     {
     id: "music-streaming",
@@ -442,31 +495,6 @@ const projects: Project[] = [
           <TypographyP className="font-mono">
             ESP8266-based IoT system enabling smart control of appliances,
             irrigation automation, and gas leak detection.
-          </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
-        </div>
-      );
-    },
-  },
-
-  {
-    id: "wifi-rover",
-    category: "IoT",
-    title: "Wi-Fi Controlled Rover Robot",
-    src: "/lovable-uploads/058b10b0-f283-4bb1-89cb-b323d0a2279c.png",
-    screenshots: ["058b10b0-f283-4bb1-89cb-b323d0a2279c.png"],
-    live: "https://github.com/Nikhil2005menariya/Rover-Wifi-Controlled",
-    github: "https://github.com/Nikhil2005menariya/Rover-Wifi-Controlled",
-    skills: {
-      frontend: [],
-      backend: [PROJECT_SKILLS.python],
-    },
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono">
-            Wi-Fi controlled rover robot using ESP8266 with a hosted control
-            panel and real-time movement.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
