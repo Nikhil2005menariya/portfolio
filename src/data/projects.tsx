@@ -123,7 +123,7 @@ const PROJECT_SKILLS = {
     icon: <SiReactquery />,
   },
   shadcn: {
-    title: "ShanCN UI",
+    title: "ShadCN UI",
     bg: "black",
     fg: "white",
     icon: <SiShadcnui />,
@@ -357,6 +357,59 @@ const projects: Project[] = [
   },
 },
 
+{
+  id: "loglens",
+  category: "AI · Backend · Developer Tools",
+  title: "LogLens – AI-Powered Debugging Platform",
+  src: "/lovable-uploads/loglens-1.png", // add screenshot
+  screenshots: [
+    "loglens-1.png",
+    "loglens-2.png",
+    "loglens-3.png",
+  ],
+  live: "https://github.com/Nikhil2005menariya/loglens-ai", // or deployed URL later
+  github: "https://github.com/Nikhil2005menariya/loglens-ai",
+  skills: {
+    frontend: [
+      PROJECT_SKILLS.react,
+      PROJECT_SKILLS.ts,
+      PROJECT_SKILLS.tailwind,
+      PROJECT_SKILLS.reactQuery,
+      PROJECT_SKILLS.shadcn,
+    ],
+    backend: [
+      PROJECT_SKILLS.node,
+      PROJECT_SKILLS.express,
+      PROJECT_SKILLS.mongo,
+      PROJECT_SKILLS.docker,
+    ],
+  },
+  get content() {
+    return (
+      <div>
+        <TypographyP className="font-mono">
+          LogLens is an AI-powered debugging platform that analyzes runtime error
+          logs and correlates them with real repository code to generate
+          file-specific, actionable fixes.
+          <br />
+          <br />
+          The system ingests raw logs, parses stack traces, matches affected
+          files from GitHub repositories via webhooks, and uses LLMs to generate
+          structured debugging reports including root cause analysis, fix
+          suggestions, diffs, validation status, and confidence scores.
+          <br />
+          <br />
+          Designed as a developer tool to reduce debugging time and eliminate
+          generic explanations by grounding AI responses in actual code context.
+        </TypographyP>
+
+        <ProjectsLinks live={this.live} repo={this.github} />
+      </div>
+    );
+  },
+},
+
+
 
     {
     id: "music-streaming",
@@ -468,33 +521,6 @@ const projects: Project[] = [
           <TypographyP className="font-mono">
             Machine learning model to predict stock demand using CatBoost
             Regressor with feature engineering and RMSE / MAPE evaluation.
-          </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
-        </div>
-      );
-    },
-  },
-
-
-
-  {
-    id: "bit-automation",
-    category: "IoT",
-    title: "Bit Automation – IoT Home Automation",
-    src: "/lovable-uploads/c7285175-5629-467e-a486-7bcabfcf2aef.png",
-    screenshots: ["c7285175-5629-467e-a486-7bcabfcf2aef.png"],
-    live: "https://github.com/Nikhil2005menariya/Home-Automation-IOT",
-    github: "https://github.com/Nikhil2005menariya/Home-Automation-IOT",
-    skills: {
-      frontend: [],
-      backend: [PROJECT_SKILLS.python],
-    },
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono">
-            ESP8266-based IoT system enabling smart control of appliances,
-            irrigation automation, and gas leak detection.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
