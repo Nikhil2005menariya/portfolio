@@ -236,6 +236,60 @@ export type Project = {
 };
 const projects: Project[] = [
 
+  {
+  id: "repo-agent",
+  category: "AI · Developer Tools · Full Stack",
+  title: "Code Buddy – AI Codebase Assistant",
+  src: "/lovable-uploads/codebuddy-1.png",
+  screenshots: [
+    "codebuddy-1.png",
+    "repo-agent-2.png",
+    "repo-agent-3.png",
+  ],
+  live: "https://github.com/Nikhil2005menariya/repo-agent",
+  github: "https://github.com/Nikhil2005menariya/code-buddy",
+  skills: {
+    frontend: [
+      PROJECT_SKILLS.react,
+      PROJECT_SKILLS.ts,
+      PROJECT_SKILLS.tailwind,
+      PROJECT_SKILLS.reactQuery,
+      PROJECT_SKILLS.shadcn,
+    ],
+    backend: [
+      PROJECT_SKILLS.python,
+      PROJECT_SKILLS.mongo,
+      PROJECT_SKILLS.docker,
+      PROJECT_SKILLS.node,
+    ],
+  },
+  get content() {
+    return (
+      <div>
+        <TypographyP className="font-mono">
+          Code Buddy  is an AI-powered developer tool that allows users to
+          interact with large repositories using natural language. The system
+          indexes codebases into a vector database and enables contextual
+          understanding of project structure.
+          <br />
+          <br />
+          Developers can ask questions about their code, request improvements,
+          and receive safe AI-generated modifications. All proposed changes are
+          presented with diffs and require explicit approval before being
+          applied.
+          <br />
+          <br />
+          Built with FastAPI, MongoDB, ChromaDB, and a React + TypeScript
+          dashboard, the platform supports project isolation, chat history,
+          vector search over code, and controlled AI-driven code updates.
+        </TypographyP>
+
+        <ProjectsLinks live={this.live} repo={this.github} />
+      </div>
+    );
+  },
+},
+
 
    {
     id: "arogya-ai",
@@ -270,6 +324,60 @@ const projects: Project[] = [
       );
     },
   },
+  {
+  id: "grabpic-ai-photo-retrieval",
+  category: "AI · Computer Vision · Full Stack",
+  title: "GrabPic – AI Photo Retrieval for Events",
+  src: "/lovable-uploads/grabpic-1.png", // add screenshot later
+  screenshots: [
+    "grabpic-1.png",
+    "grabpic-2.png",
+    "grabpic-3.png",
+  ],
+  live: "https://event-lens-coral.vercel.app",
+  github: "https://github.com/Nikhil2005menariya/GRABPIC",
+  skills: {
+    frontend: [
+      PROJECT_SKILLS.react,
+      PROJECT_SKILLS.tailwind,
+      PROJECT_SKILLS.reactQuery,
+      PROJECT_SKILLS.shadcn,
+      PROJECT_SKILLS.framerMotion,
+    ],
+    backend: [
+      PROJECT_SKILLS.node,
+      PROJECT_SKILLS.express,
+      PROJECT_SKILLS.mongo,
+      PROJECT_SKILLS.python,
+      PROJECT_SKILLS.docker,
+    ],
+  },
+  get content() {
+    return (
+      <div>
+        <TypographyP className="font-mono">
+          GrabPic is an AI-powered event photo retrieval platform that allows
+          users to upload a selfie and instantly find all their photos from
+          thousands of event images.
+          <br />
+          <br />
+          The system uses InsightFace for face embeddings, ChromaDB as a vector
+          database for similarity search, Redis + BullMQ for asynchronous photo
+          processing, and AWS S3 for scalable image storage. Users can upload
+          event photos, process them in the background, and retrieve matches
+          through fast vector search.
+          <br />
+          <br />
+          The architecture includes a React frontend deployed on Vercel, a Node.js
+          API gateway, a worker service for background processing, and a FastAPI
+          AI service running on EC2 for face recognition inference.
+        </TypographyP>
+
+        <ProjectsLinks live={this.live} repo={this.github} />
+      </div>
+    );
+  },
+},
 
   {
     id: "chatx",
