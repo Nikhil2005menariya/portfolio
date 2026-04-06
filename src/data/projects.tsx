@@ -235,6 +235,65 @@ export type Project = {
   live: string;
 };
 const projects: Project[] = [
+  {
+  id: "resumai",
+  category: "AI · Full Stack · SaaS",
+  title: "Resum.AI – AI Resume Generator & Job Matcher",
+  src: "/lovable-uploads/resumeAi.png", // add screenshot
+  screenshots: [
+    "resumai-1.png",
+    "resumai-2.png",
+    "resumai-3.png",
+  ],
+  live: "https://github.com/Nikhil2005menariya/ResumeAi",
+  github: "https://github.com/Nikhil2005menariya/ResumeAi",
+  skills: {
+    frontend: [
+      PROJECT_SKILLS.react,
+      PROJECT_SKILLS.ts,
+      PROJECT_SKILLS.tailwind,
+      PROJECT_SKILLS.reactQuery,
+      PROJECT_SKILLS.framerMotion,
+    ],
+    backend: [
+      PROJECT_SKILLS.python,
+      PROJECT_SKILLS.mongo,
+      PROJECT_SKILLS.docker,
+      PROJECT_SKILLS.node,
+    ],
+  },
+  get content() {
+    return (
+      <div>
+        <TypographyP className="font-mono">
+          Resum.AI is a full-stack AI-powered platform that generates
+          ATS-optimized resumes and matches users with relevant job opportunities
+          based on their profile and skills.
+          <br />
+          <br />
+          The system uses a multi-agent workflow built with LangGraph to analyze
+          job descriptions, extract key requirements, select relevant user
+          projects and experience, and generate professionally formatted LaTeX
+          resumes. It also calculates ATS scores and supports iterative resume
+          refinement using AI.
+          <br />
+          <br />
+          Features include job matching via web search APIs, real-time agent
+          updates using WebSockets, Auth0-based authentication, OTP password
+          reset, resume versioning, and PDF generation using Docker-based LaTeX
+          compilation.
+          <br />
+          <br />
+          Built with React + TypeScript frontend, FastAPI backend, MongoDB
+          database, and integrated AI services (Claude / Gemini), the platform
+          functions as an end-to-end intelligent career assistant.
+        </TypographyP>
+
+        <ProjectsLinks live={this.live} repo={this.github} />
+      </div>
+    );
+  },
+},
 
   {
   id: "repo-agent",
